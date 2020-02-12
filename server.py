@@ -31,3 +31,7 @@ def submit_form():
                 return render_template('index.html', text="Something went wrong, please try again.")
     else:
         return render_template('index.html', text="Something went wrong, please try again.")
+
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0')
