@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>Parfate - An Online Business Community</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="./static/assets/css/main.css" />
+	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<header id="header">
+		<h1>Parfate</h1>
+		<p>An online community for small business owners,<br /> by small business owners.</p>
+		<p>Join the waitlist.</p>
+	</header>
+
+	<!-- Signup Form -->
+	<form id="signup-form" method="post" action="submit_form">
+		<input type="email" name="email" id="email" placeholder="Email Address" />
+		<input type="submit" value="Sign Up" />
+		<span class="message"> {{text}}</span>
+	</form>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<ul class="icons">
+
+		</ul>
+		<ul class="copyright">
+			<li>&copy; 2020 Parfate, all rights reserved.</li>
+			<li>Built in Boston</a></li>
+		</ul>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="./static/assets/js/main.js"></script>
+
+</body>
+
+</html>
